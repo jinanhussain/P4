@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&J Delights - Contact Us</title>
+    <style>
+        body {
+            background-color: #EDEAEA;
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            color: #535353;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #535353;
+            margin-top: 30px;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #C89B9B;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .content-title {
+            font-size: 45px;
+            color: #535353;
+            text-align: center;
+        }
+
+        .content-text {
+            font-size: 30px;
+            color: #535353;
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        .contact-box {
+            background-color: #C89B9B;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .contact-info {
+            font-size: 20px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .popup-message {
+            font-weight: bold;
+            font-size: 25px;
+            color: #9e7979;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Us!</h1>
+
+    <div class="contact-container">
+        <div class="content-title">Connect with the Sweetness!</div>
+        <div class="content-text">
+            Welcome to the social hub of P&J Delights—where every post is a celebration of sweetness and creativity!
+            Connect with us across various platforms to stay updated on the latest mouthwatering creations, behind-the-scenes magic, and exclusive offers.
+        </div>
+    </div>
+
+    <!-- Instagram -->
+    <div class="contact-box">
+        <div class="contact-info">
+            <img src="P4 contact/instagram.jpg" alt="Instagram Icon" class="icon">
+            <a href="https://www.instagram.com/pjdelights/" target="_blank" style="color: #FFFFFF;">@pjdelights</a>
+        </div>
+    </div>
+
+    <!-- TikTok -->
+    <div class="contact-box">
+        <div class="contact-info">
+            <img src="P4 contact/tiktok.jpg" alt="TikTok Icon" class="icon">
+            <a href="https://www.tiktok.com/@_pjdelights" target="_blank" style="color: #FFFFFF;">@_pjdelights</a>
+        </div>
+    </div>
+
+    <!-- Facebook -->
+    <div class="contact-box">
+        <div class="contact-info">
+            <img src="P4 contact/facebook.jpg" alt="Facebook Icon" class="icon">
+            <a href="https://www.facebook.com/people/PJ-Delights/pfbid0uL7VupAcX2B8tfderL45Hh66xYc1VUipyCvuvMKr49xLVovroBTRXLJixGV98M5al/" target="_blank" style="color: #FFFFFF;">@pjdelights</a>
+        </div>
+    </div>
+
+    <!-- Gmail -->
+    <div class="contact-box">
+        <div class="contact-info">
+            <img src="P4 contact/gmail.jpg" alt="Gmail Icon" class="icon">
+            <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCKCJDtrlSRcmXvTVSWkcCJdBxjxKHwZsQKXkVwCkvFmwJlrCdkHZWDrMzNcFrZmgRXhXTLV" target="_blank" style="color: #FFFFFF;">delightspj@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="contact-box">
+        <div class="contact-info">
+            <img src="P4 contact/phone.jpg" alt="Phone Icon" class="icon">
+            <span style="color: #FFFFFF;">201-370-0974</span>
+        </div>
+    </div>
+
+    <!-- Google Profile -->
+    <div class="contact-box">
+        <div class="contact-info">
+            <img src="P4 contact/googleprofile.jpg" alt="Google Profile Icon" class="icon">
+            <a href="https://maps.app.goo.gl/QfvqYpBwynoDkBPF6?g_st=i" target="_blank" style="color: #FFFFFF;">P&J Delights</a>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p class="popup-message">The form was successfully submitted and sent to delightspj@gmail.com. The P&J Delights team will reach out to you in 1-2 business days via email. Thank you for reaching out, we look forward to working with you!</p>
+    </div>
+
+    <script>
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
+<!-- DEVELOPER: Jinan Hussain, IS117-005, Fall 2023 ->
