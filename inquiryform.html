@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&J Delights - Inquiry Form</title>
+    <style>
+        body {
+            background-color: #EDEAEA;
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            color: #535353;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #535353;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-label {
+            font-size: 30px;
+            color: #535353;
+            margin-bottom: 5px;
+        }
+
+        .form-textbox {
+            background-color: #535353;
+            color: #EDEAEA;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .submit-button {
+            background-color: #C89B9B;
+            color: #EDEAEA;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .popup-message {
+            font-weight: bold;
+            font-size: 25px;
+            color: #9e7979;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inquiry Form</h1>
+
+    <div class="form-container">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" class="form-textbox" placeholder="insert name" onclick="clearText(this)">
+
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" class="form-textbox" placeholder="insert email" onclick="clearText(this)">
+
+        <label for="phone" class="form-label">Phone Number:</label>
+        <input type="tel" id="phone" class="form-textbox" placeholder="insert phone number" onclick="clearText(this)">
+
+        <label for="inquiry" class="form-label">Inquiry:</label>
+        <textarea id="inquiry" class="form-textbox" rows="4" placeholder="insert your inquiry" onclick="clearText(this)"></textarea>
+
+        <label for="extraDetails" class="form-label">Extra Details:</label>
+        <textarea id="extraDetails" class="form-textbox" rows="4" placeholder="insert any extra details (theme, color scheme, expected number of guests, etc)" onclick="clearText(this)"></textarea>
+
+        <div class="submit-button" onclick="showPopup()">Submit Inquiry Form</div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p class="popup-message">The form was successfully submitted and sent to delightspj@gmail.com. The P&J Delights team will reach out to you in 1-2 business days via email. Thank you for reaching out, we look forward to working with you!</p>
+    </div>
+
+    <script>
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function clearText(element) {
+            element.placeholder = "";
+        }
+    </script>
+
+</body>
+</html>
+<!-- DEVELOPER: Jinan Hussain, IS117-005, Fall 2023 ->
